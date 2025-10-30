@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesfromscratch.css">
+    <title>Quiz Selection</title>
+</head>
+<body>
+    <div class="off_screen_menu">
+    <ul>
+        <li><a href="hjem.html">Hjem</a></li>
+        <li><a href="quiz.html">Quiz</a></li> 
+        <li><a href="about.html">Om</a></li>
+    </ul>
+    </div>
+    <header>
+        <div class="logoAndTitle">
+            <img id = "logo" src="logo.png">
+            <h1>Planteside</h1>
+        </div>
+        <nav> 
+            <a href="hjem.html">Hjem</a> 
+            <a href="quizSelect.html">Quiz</a> 
+            <a href="about.html">Om</a> 
+        </nav>
+        <div class="ham_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <div class="quizContainer">
+        <div class="quizSelection">
+            <button onclick="startQuiz('trees')" class="quizBtn" data-label="Trær">
+                <img src="Planter/Furu.png" class="quizBtnImg">Trær</button> 
+        </div>
+        <div class="quizSelection">
+            <button onclick="startQuiz('somePlants')" class="quizBtn" data-label="Et utvalg planter">
+                <img src="Planter/Bleikmyrklegg.PNG" class="quizBtnImg">Et utvalg planter</button>
+        </div>
+        <div class="quizSelection">
+            <button onclick="startQuiz('ferns')" class="quizBtn" data-label="Bregner">
+                <img src="Planter/Strutseving.PNG" class="quizBtnImg">Bregner</button>
+        </div>
+    </div>
+   <script src = "quizSelectLogic.js"></script>
+</body>
+</html>

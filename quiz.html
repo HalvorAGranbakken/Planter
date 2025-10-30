@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="stylesfromscratch.css">
+    <title>Quiz</title>
+</head>
+
+<body>
+    <div class="off_screen_menu">
+    <ul>
+        <li><a href="hjem.html">Hjem</a></li>
+        <li><a href="quiz.html">Quiz</a></li> 
+        <li><a href="about.html">Om</a></li>
+    </ul>
+    </div>
+    <header>
+        <div class="logoAndTitle">
+            <img id = "logo" src="logo.png">
+            <h1>Planteart</h1>
+        </div>
+        <nav> 
+            <a href="hjem.html">Hjem</a> 
+            <a href="quizSelect.html">Quiz</a> 
+            <a href="about.html">Om</a> 
+        </nav>
+        <div class="ham_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <!--<button id="darkmode" onclick="document.body.classList.toggle('dark')">Darkmode</button>-->
+    <div id = "quizView">
+        <img id = "quizImage" src = "">
+
+        <div id = "answerBox">
+            <p id="Promt">Hvilken art er dette?</p>
+            <input type="text" id = "answer" autocomplete="off">
+            <button id="answerButton" onclick="buttonCheck()">Svar</button>
+            <p id="answerFeedback"></p>
+            <p id="score"></p>
+        </div>
+    </div>
+
+
+    <script src = "hamMenu.js"></script>
+    <script src = "quizLogic.js"></script>
+</body>
+</html>

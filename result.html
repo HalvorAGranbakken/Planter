@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultat</title>
+    <link rel = "stylesheet" href = stylesfromscratch.css>
+
+</head>
+<body>
+        <div class="off_screen_menu">
+    <ul>
+        <li><a href="hjem.html">Hjem</a></li>
+        <li><a href="quiz.html">Quiz</a></li> 
+        <li><a href="about.html">Om</a></li>
+    </ul>
+    </div>
+    <header>
+        <div class="logoAndTitle">
+            <img id = "logo" src="logo.png">
+            <h1>Planteside</h1>
+        </div>
+        <nav> 
+            <a href="hjem.html">Hjem</a> 
+            <a href="quizSelect.html">Quiz</a> 
+            <a href="about.html">Om</a> 
+        </nav>
+        <div class="ham_menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+    <div class="textBox">
+        <h1>Resultat</h1>
+        <p id = "score"></p>
+        <button onclick="location.href='quiz.html'">Ta på nytt</button>
+        <button onclick="location.href='quizSelect.html'">Velg quiz</button>
+    </div>
+
+
+     <script src = "hamMenu.js"></script>
+    <script src = "resultLogic.js"></script>
+</body>
+</html>
